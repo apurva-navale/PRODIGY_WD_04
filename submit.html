@@ -1,0 +1,106 @@
+<html>
+ <head>
+ <title>Cinemax</title>
+ <style>
+ @import
+"https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap";
+ .logo-container {
+ margin-bottom: 20px; /* Adjust this margin as needed */
+}
+* {
+ font-family: "Poppins", sans-serif;
+}
+.fas {
+ font-familty: font-awesome; /* Typo: Should be "font-family" */
+}
+body {
+ background: #ffe5ec;
+}
+body::before,
+ body::after{
+ content: '';
+ position: absolute;
+ left: 0;
+ top:0;
+ height: 100%;
+ width: 100%;
+ }
+ body::before {
+ clip-path: circle(20% at left 20%);
+ background: linear-gradient(135deg, #FFA07A 10%, #FF69B4 100%);
+}
+body::after {
+ clip-path: circle(20% at right 80%);
+ background: linear-gradient(135deg, #FFA07A 10%, #FF69B4 100%);
+}
+.wrapper {
+ display: flex;
+ align-items: center;
+ width: 450px;
+ margin: 60px auto 0;
+ text-align: center;
+ padding: 40px 50px;
+ box-sizing: border-box;
+ background: #ffffff;
+ overflow: hidden;
+ border-radius: 7px;
+ box-shadow: 0px 8px 12px #c1c4c5d4;
+ position: fixed;
+ left: calc(50% - 225px); 
+ height: 300px;
+}
+.popup {
+ width: 100%;
+}
+h3.itle {
+ font-weight: 600;
+ margin-bottom: 0px;
+ color: #1F232D;
+ font-size:24px;
+}
+p.description {
+ font-weight: 500;
+ font-size: 18px;
+ color: #424652;
+ margin-bottom: 25px;
+}
+.button {
+ text-transform: uppercase;
+ font-size: 15px;
+ line-height: 1.5;
+ border: 0;
+ padding: 12px 25px;
+ border-radius: 80px;
+ box-shadow: 0 10px 25px -10px #f06335;
+ letter-spacing: 1px;
+ margin: 10px;
+ cursor: pointer;
+}
+.actions .confirm {
+ background: #dd2d4a;
+ color: #fff;
+}
+.actions .confirm:hover {
+ background: #ff9a9e;
+ color: #fff;
+ box-shadow: 0 8px 12px -10px #f06335;
+}
+ </style>
+ </head>
+     <body>
+       <form action="folio.html">
+           <div class="wrapper">
+              <div class="popup">
+                  <div class="content">
+                    <h3 class="title">Thank you for the feedback</h3>
+                     <p class="description">Enjoy your day</p>
+                     <div class="actions">
+                       <button class="confirm button">Back</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </form>
+ </body>
+ </html>
+ 
